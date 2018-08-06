@@ -1,0 +1,30 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #eee;
+    margin: 20px;
+}
+
+textarea {
+    display:block;
+}
+
+.inputs {
+    position: relative;
+}
+
+button.send {
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+
+    height: 45px;
+    padding:12px;
+}
+
+.posts {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 200px;
+    background-color: aliceblue;
+    border: 1px solid #333;
+}

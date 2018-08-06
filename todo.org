@@ -1,0 +1,54 @@
+* Tasks
+- Write a readme
+- Write business logic with tests
+- Add react and minimal css framework
+
+* Business Logic
+- Add users
+- Read last 10 items from DB to populate re-entry into chat.
+
+* Data
+#+BEGIN_SRC javascript
+{
+  sessions: {
+    "sessionKey1": {
+      userId: 1,
+      roomId: 1,
+      id: "sessionKey"
+    },
+    "sessionKey2": {
+      userId: 1,
+      roomId: 1,
+      id: "sessionKey"
+    }
+    ...
+  },
+  rooms: {
+     1: {
+       occupants: [
+         "batman", "superman"
+       ]
+     }
+  },
+  posts: {
+     1: [
+       {
+         text: "off to the batcave",
+         username: "batman",
+         timestamp: 1000000001
+       },
+       {
+         text: "ok, I'm going to metropolis",
+         username: "batman",
+         timestamp: 1000000002
+       },
+       {
+         text: "w/e",
+         username: "theflash",
+         timestamp: 1000000003
+       }
+     ],
+     ...
+  }
+}
+#+END_SRC
