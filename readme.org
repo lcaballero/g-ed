@@ -1,0 +1,16 @@
+* How to Demo
+You will need Go installed and Node.js/NPM.
+
+#+BEGIN_SRC bash
+mkdir -p $GOPATH/src/github.com/lcaballero
+cd $_
+git clone https://github.com/lcaballero/g-ed
+
+cd g-ed/frontend
+npm install
+npm run build
+
+cd ..
+go install && go-ed serve frontend dist
+
+#+END_SRC
