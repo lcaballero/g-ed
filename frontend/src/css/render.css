@@ -8,6 +8,10 @@ textarea {
     display:block;
 }
 
+.main {
+    width:590px;
+}
+
 .inputs {
     position: relative;
 }

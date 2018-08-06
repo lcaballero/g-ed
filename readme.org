@@ -1,5 +1,5 @@
 * How to Demo
-You will need Go installed and Node.js/NPM.
+You will need Go and Node.js/NPM installed.
 
 #+BEGIN_SRC bash
 mkdir -p $GOPATH/src/github.com/lcaballero

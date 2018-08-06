@@ -1,0 +1,23 @@
+* Design
+
+Pusher.com (would have like to have done it via AWS Lambda and
+Pusher).  Possilby also using TypeScript and a simple NPM module for
+the websocket and chatt rooms.  I don't really remember all the
+functionality of websockets and rooms so I didn't design them in.
+Would have to do more research in that area.  I decided not to go that
+route because I never dealt with a websocket client on the server,
+that would listen to the chat and then record the posts between the
+users... possibly not that hard though.
+
+The server side of the application is designed to persist posts and
+would have eventually loaded the top 10 or so recent posts if the page
+were to reload.  Wrote a little in memory database in Go, and it is
+bare-bones, wish I could have done something better, like use a
+CloudDB thing, or some other Go lib, but none would have met the "toy"
+simplicity I wanted.
+
+I needed to design more around how users were going to be maintained
+via session and page loads.  Since there wouldn't be any login and
+user registration I didn't really design much in the way to fake that
+functionality (yet).
+
